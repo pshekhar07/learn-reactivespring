@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+  data.mongodb:
+    uri: mongodb+srv://<userid>:<password><id>.wpi4p.mongodb.net/springwebflux?retryWrites=true&w=majority
+---
+spring:
+  profiles: qa
+  data.mongodb:
+    uri: mongodb+srv://<userid>:<password><id>.wpi4p.mongodb.net/springwebflux?retryWrites=true&w=majority
+---
+spring:
+  profiles: prod
+  data.mongodb:
+    uri: mongodb+srv://<userid>:<password><id>.wpi4p.mongodb.net/springwebflux?retryWrites=true&w=majority
+---
+spring:
+  profiles: test
